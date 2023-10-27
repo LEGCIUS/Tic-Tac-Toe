@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//Esta clase permite al jugador poner y "elegir el simbolo(no deja)"
 class Player {
     private char symbol;
     private String playerName;

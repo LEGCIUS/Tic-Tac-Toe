@@ -1,3 +1,4 @@
+//Clase para que judr elgija el modo de juego conta la computadora o un player
 class GameMode {
     private String playerVsPlayer;
     private String playerVsComputer;

@@ -1,3 +1,4 @@
+//Esta clase da los mensajes de empate o victoria
 class GameResult {
     private boolean draw;
     private boolean winner;
@@ -11,9 +12,9 @@ class GameResult {
 
     public void displayResult() {
         if (draw) {
-            System.out.println("¡Empate! El juego ha terminado en empate.");
+            System.out.println("¡Empate!");
         } else {
-            System.out.println("¡Felicidades! Has ganado.");
+            System.out.println("¡Has ganado!.");
         }
     }
 }

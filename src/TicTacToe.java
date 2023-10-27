@@ -1,6 +1,7 @@
 import java.util.Scanner;
-
+//Esta es la clase main donde se desarrolla toto el codigo
 public class TicTacToe {
+
     private final String writeName;
     private final Scanner scanner;
     private final Board board;
@@ -8,7 +9,7 @@ public class TicTacToe {
     public TicTacToe(String selectSymbol, String writeName) {
         this.writeName = writeName;
         this.scanner = new Scanner(System.in);
-        this.board = new Board(3); // Tamaño del tablero 3x3 por defecto
+        this.board = new Board(3); // Tamaño del tablero 3x3 por determinado
     }
 
     public void chooseGameMode() {
@@ -56,9 +57,9 @@ public class TicTacToe {
         if (GameLogic.checkWinner(board, 'X')) {
             System.out.println(writeName + " ¡Felicidades, has ganado!");
         } else if (GameLogic.checkWinner(board, 'O')) {
-            System.out.println("Jugador 2 ¡Felicidades, has ganado!");
+            System.out.println("Jugador 2 ¡has ganado!");
         } else {
-            System.out.println("¡Empate! El juego ha terminado en empate.");
+            System.out.println("¡Empate!");
         }
     }
 
@@ -88,11 +89,11 @@ public class TicTacToe {
 
         board.printBoard();
         if (GameLogic.checkWinner(board, 'X')) {
-            System.out.println(writeName + " ¡Felicidades, has ganado!");
+            System.out.println(writeName + " ¡has ganado!");
         } else if (GameLogic.checkWinner(board, 'O')) {
             System.out.println("Pepe the computer ¡Felicidades, has ganado!");
         } else {
-            System.out.println("¡Empate! El juego ha terminado en empate.");
+            System.out.println("¡Empate!");
         }
     }
 

@@ -22,7 +22,8 @@ class Board {
     }
 
     public boolean placeSymbol(int row, int col, char symbol) {
-        if (row >= 0 && row < boardSize && col >= 0 && col < boardSize && board[row][col] == ' ') {
+        if (row >= 0 && row < boardSize && col >= 0 && col < boardSize &&
+                board[row][col] == ' ') {
             board[row][col] = symbol;
             return true;
         }
@@ -39,7 +40,7 @@ class Board {
         }
         return true;
     }
-
+//Permite mostrar el tablero en la consola
     public void printBoard() {
         for (int i = 0; i < boardSize; i++) {
             for (int j = 0; j < boardSize; j++) {
@@ -56,7 +57,7 @@ class Board {
     }
 
     public void reset() {
-        // Reiniciar el tablero llenando todas las celdas con espacios en blanco
+        // Pone el tablero en blanco
         for (int i = 0; i < boardSize; i++) {
             for (int j = 0; j < boardSize; j++) {
                 this.board[i][j] = ' ';

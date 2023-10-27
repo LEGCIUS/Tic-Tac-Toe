@@ -1,5 +1,5 @@
 import java.util.Random;
-
+//La "logica(es aleatoria)" que lleva la computadora para poner su simbolo
 class ComputerPlayer {
     private char symbol;
     private String computerName;
